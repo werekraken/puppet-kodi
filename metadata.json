@@ -1,0 +1,29 @@
+{
+  "name": "werekraken-kodi",
+  "version": "0.1.0",
+  "author": "werekraken",
+  "summary": "Puppet kodi module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/werekraken/puppet-kodi",
+  "project_page": "https://github.com/werekraken/puppet-kodi",
+  "issues_url": "https://github.com/werekraken/puppet-kodi/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement":">= 2.2.2"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04",
+        "12.04"
+      ]
+    }
+  ]
+}
