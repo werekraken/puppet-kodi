@@ -1,5 +1,7 @@
 # kodi
 
+[![Build Status](https://travis-ci.org/werekraken/puppet-kodi.svg?branch=master)](https://travis-ci.org/werekraken/puppet-kodi)
+
 #### Table of Contents
 
 1. [Overview](#overview)
