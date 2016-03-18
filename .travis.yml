@@ -15,5 +15,19 @@ matrix:
     env: PUPPET_GEM_VERSION="~> 3.0" FUTURE_PARSER="yes"
   - rvm: 2.1.6
     env: PUPPET_GEM_VERSION="~> 4.0" STRICT_VARIABLES="yes"
+  - rvm: default
+    sudo: required
+    dist: trusty
+    services: docker
+    env: BEAKER_set="ubuntu-1204-x64-docker"
+    bundler_args:
+    script: sudo service docker restart ; sleep 10 && bundle exec rake acceptance
+  - rvm: default
+    sudo: required
+    dist: trusty
+    services: docker
+    env: BEAKER_set="ubuntu-1404-x64-docker"
+    bundler_args:
+    script: sudo service docker restart ; sleep 10 && bundle exec rake acceptance
 notifications:
   email: false
